@@ -1,11 +1,9 @@
 function returnOddArray(){
-  odds = 1
-  console.log(odds)
-  while(odds <= 253){
-    odds = odds + 2
-    console.log(odds)
+  array = []
+  for(i=1;i<=255;i+=2){
+    array.push(i)
   }
-  return odds
+  return array
 }
 y = returnOddArray();
 console.log(y); // should log [1,3,5,...,253,255]
